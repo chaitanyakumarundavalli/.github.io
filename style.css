@@ -167,3 +167,31 @@ footer {
     margin: 10px;
   }
 }
+
+.stat-card-roles {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.stat-card-roles .stat-label {
+  min-width: 90px;
+}
+
+.role-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.role-chip {
+  background: #f1f2ed;
+  color: #006f86;
+  border: 1px solid #deded9;
+  border-radius: 999px;
+  padding: 0.45rem 0.8rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
