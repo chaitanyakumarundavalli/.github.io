@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  color: #1f1f1f;
+}
+
+nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8%;
+  border-bottom: 1px solid #e5e5e5;
+  background: white;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  border: 1px solid #d8d8d8;
+  border-radius: 50%;
+  padding: 14px;
+  color: #4f7f13;
+}
+
+nav a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: #666;
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  padding: 120px 8%;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 76px;
+  line-height: 0.95;
+  margin: 0;
+}
+
+.hero h1 span {
+  color: #4f7f13;
+  font-style: italic;
+}
+
+.subtitle {
+  font-size: 22px;
+  color: #666;
+  line-height: 1.7;
+  margin: 35px 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #b7e532;
+  color: #111;
+  padding: 18px 32px;
+  margin-right: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.stats-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 30px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stats-card span {
+  letter-spacing: 3px;
+  color: #777;
+}
+
+.stats-card strong {
+  font-size: 34px;
+  color: #4f7f13;
+}
+
+section {
+  padding: 80px 8%;
+}
+
+.section-title {
+  font-size: 42px;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 28px;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.tag {
+  display: inline-block;
+  background: #eef2e8;
+  color: #18718a;
+  padding: 8px 12px;
+  border-radius: 20px;
+  margin: 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 50px;
+  background: #111;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .hero,
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 52px;
+  }
+
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  nav a {
+    margin: 10px;
+  }
+}
